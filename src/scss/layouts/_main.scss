@@ -71,12 +71,21 @@ body {
       left: 9.25rem;
     }
     .pointer {
-      width: 7rem;
-      border-top: 2px solid red;
+      width: 12rem;
       position: relative;
-      top: 2rem;
-      left: 6.25rem;
+      top: 5.45rem;
+      left: 3.75rem;
       transform: rotate(90deg);
+      animation: time 60s infinite linear;
+      .red {
+        width: 7rem;
+        border-top: 2px solid red;
+      }
+      @keyframes time {
+        to {
+          transform: rotate(360deg);
+        }
+      }
     }
   }
 }
