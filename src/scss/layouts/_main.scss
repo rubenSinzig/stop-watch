@@ -1,11 +1,14 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-color: #bbd0ff;
+  background-color: #8aafff;
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+
+  // Clock
   .clock {
     width: 20rem;
     height: 20rem;
@@ -87,5 +90,49 @@ body {
         }
       }
     }
+  }
+
+  // Counter
+  .counter {
+    width: 25rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    p {
+      font-size: 3rem;
+      color: rgb(173, 23, 23);
+    }
+    button {
+      width: 6rem;
+      height: 1.75rem;
+      margin: 1rem 1rem 0 0;
+      background-color: transparent;
+      outline: transparent;
+      border: 2px solid #ffd6ff;
+      border-radius: 5px;
+      color: #ffd6ff;
+      font-size: 1rem;
+      &:hover {
+        background-color: #ffd6ff;
+        color: #8aafff;
+      }
+    }
+  }
+
+  // Footer
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #ffd6ff;
+    width: 100vw;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #5d90fd;
   }
 }
