@@ -79,12 +79,21 @@ body .clock .point {
   left: 9.25rem;
 }
 body .clock .pointer {
+  width: 12rem;
+  position: relative;
+  top: 5.45rem;
+  left: 3.75rem;
+  transform: rotate(90deg);
+  animation: time 60s infinite linear;
+}
+body .clock .pointer .red {
   width: 7rem;
   border-top: 2px solid red;
-  position: relative;
-  top: 2rem;
-  left: 6.25rem;
-  transform: rotate(90deg);
+}
+@keyframes time {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
