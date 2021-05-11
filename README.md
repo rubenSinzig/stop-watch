@@ -1,8 +1,8 @@
 ![File Icon](/src/images/readme-icon.png)
 
-## Project Name
+## Stop Watch
 
-**[View Project](#)**
+**[View Project](https://rubensinzig.github.io/stop-watch/)**
 
 ---
 
@@ -22,19 +22,19 @@
 
 ---
 
-[![Screenshot from Project](/src/images/readme-screenshot.png)](#)
+[![Screenshot from Project](/src/images/project-screenshot.png)](https://rubensinzig.github.io/stop-watch/)
 
 ### About Project
 
-Project description
+Stop-Watch App developed with HTML, SCSS and JavaScript.
 
 ##### Developed With
 
-- [ ] _HTML5_
+- [x] _HTML5_ [--> go to file](https://github.com/rubenSinzig/stop-watch/blob/main/src/index.html)
 - [ ] _CSS3_
 - [ ] _SASS_
-- [ ] _SCSS_
-- [ ] _JavaScript_
+- [x] _SCSS_ [--> go to folder](https://github.com/rubenSinzig/stop-watch/tree/main/src/scss)
+- [x] _JavaScript_ [--> go to file](https://github.com/rubenSinzig/stop-watch/blob/main/src/scripts/index.js)
 - [ ] _React_
 - [ ] _Bootstrap_
 - [ ] _..._
