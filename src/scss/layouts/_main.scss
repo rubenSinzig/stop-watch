@@ -1,0 +1,82 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #bbd0ff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  .clock {
+    width: 20rem;
+    height: 20rem;
+    border: 5px solid #ffd6ff;
+    border-radius: 50%;
+    justify-self: flex-start;
+    margin-bottom: 2rem;
+    .dash {
+      position: relative;
+      margin-bottom: 2px;
+      width: 2rem;
+      border-top: 5px solid #ffd6ff;
+    }
+    .top {
+      top: 0.75rem;
+      left: 8.75rem;
+      transform: rotate(90deg);
+    }
+    .top-right {
+      width: 1.25rem;
+      top: 3rem;
+      left: 16rem;
+      transform: rotate(-45deg);
+    }
+    .right {
+      top: 9rem;
+      left: 17.5rem;
+    }
+    .right-bottom {
+      width: 1.25rem;
+      top: 14.5rem;
+      left: 16rem;
+      transform: rotate(-135deg);
+    }
+    .bottom {
+      top: 16.75rem;
+      left: 8.75rem;
+      transform: rotate(90deg);
+    }
+    .bottom-left {
+      width: 1.25rem;
+      top: 14rem;
+      left: 2.5rem;
+      transform: rotate(135deg);
+    }
+    .left {
+      top: 7.5rem;
+      left: 0;
+    }
+    .left-top {
+      width: 1.25rem;
+      top: 0.5rem;
+      left: 2rem;
+      transform: rotate(45deg);
+    }
+    .point {
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      background-color: rgb(41, 41, 41);
+      position: relative;
+      top: 6rem;
+      left: 9.25rem;
+    }
+    .pointer {
+      width: 7rem;
+      border-top: 2px solid red;
+      position: relative;
+      top: 2rem;
+      left: 6.25rem;
+      transform: rotate(90deg);
+    }
+  }
+}
