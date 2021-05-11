@@ -11,6 +11,7 @@ let appendSeconds = document.querySelector("#seconds");
 const startButton = document.querySelector("#button-start");
 const stopButton = document.querySelector("#button-stop");
 const resetButton = document.querySelector("#button-reset");
+const style = document.createElement("style");
 let interval;
 
 // function for start counter
@@ -39,10 +40,20 @@ const startCounter = () => {
 // Event listener for start, stop and reset
 startButton.addEventListener("click", function () {
   interval = setInterval(startCounter);
+  style.innerHTML = `
+  @keyframes time {
+    to {
+      transform: rotate(450deg);
+    }
+  }
+  `;
+  document.head.appendChild(style);
 });
 
 stopButton.addEventListener("click", function () {
   clearInterval(interval);
+
+  // solution to stop the pointer at the current position is missing
 });
 
 resetButton.addEventListener("click", function () {
@@ -51,4 +62,11 @@ resetButton.addEventListener("click", function () {
   seconds = "00";
   appendSeconds.innerHTML = seconds;
   appendTens.innerHTML = tens;
+
+  style.innerHTML = `
+  .pointer {
+    animation: none;
+  }
+  `;
+  document.head.appendChild(style);
 });
